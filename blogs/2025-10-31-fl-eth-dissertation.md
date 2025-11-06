@@ -1,3 +1,14 @@
+---
+layout: post
+title: "Building a Privacy-Preserving Fraud Detection System with Federated Learning"
+date: 2025-10-31
+tags: [Federated Learning,ML,Privacy,Research],
+excerpt: "A short description of your post that appears in previews"
+featured: false  # Only add this to featured posts
+read_time: "5 min read"
+---
+
+
 *This blog post is a condensed, reflective version of my undergraduate dissertation project completed at Vishwakarma Institute of Information Technology, Pune. I worked on this with my incredible team members Sushant Kuratkar, Pratik Nule, and Prateek Mazumder under the guidance of Prof. Geetanjali Yadav. While the original dissertation was a comprehensive 60-page technical document, I have distilled it here into the core concepts, implementation details, and honest reflections on what we learned.*
 
 ---

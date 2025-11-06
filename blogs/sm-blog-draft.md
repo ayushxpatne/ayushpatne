@@ -1,3 +1,13 @@
+---
+layout: post
+title: "Building a Social Media Recommendation Algorithm from Scratch"
+date: 2025-10-31
+tags: [Federated Learning,ML,Privacy,Research],
+excerpt: "A short description of your post that appears in previews"
+featured: true  # Only add this to featured posts
+read_time: "25 min read"
+---
+
 # I Never Understood How Social Media Algorithms Worked, So I Made One
 
 ## Introduction

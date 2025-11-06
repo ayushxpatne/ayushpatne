@@ -1,0 +1,29 @@
+# Site settings
+title: Ayush Patne
+description: Building AI systems from research to production
+url: "https://ayushxpatne.github.io/ayushpatne"  # Change to your actual URL
+baseurl: ""
+
+# Build settings
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false # This might be the default, but ensures compatibility
+permalink: /blog/:year/:month/:day/:title/
+
+# Plugins (GitHub Pages compatible)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  posts:
+    output: true
+
+# Exclude files from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
