@@ -1,51 +1,70 @@
----
-layout: default
-title: Home
----
-
-<div class="home-grid">
-    <aside class="home-intro">
-        <header>
-            <div class="intro-greeting">
-                <h1 class="intro-name">hey, i’m ayush 👋</h1>
-                <p class="intro-subtitle mono">ai engineer · msc ai @ leeds, united kingdom</p>
-            </div>
-            
-            <div class="about-snippet">
-                <p>into ai, gen ai, ml, and tinkering with systems to make things that might help someone.</p>
-                <p>this site is where i document what i’m building, breaking, and learning along the way.</p>
-            </div>
-            
-            <div class="links mono">
-                <a href="{{ '/resume' | relative_url }}">Resume →</a>
-                <a href="mailto:{{ site.links.email }}">Email ↗</a>
-                <a href="{{ site.links.linkedin }}" target="_blank">LinkedIn ↗</a>
-                <a href="{{ site.links.github }}" target="_blank">GitHub ↗</a>
-            </div>
-        </header>
-    </aside>
-
-    <main class="home-content">
-        <section class="home-content-block">
-            <h2 class="home-section-title mono">Selected Work</h2>
-            <div id="featured-posts">
-                {% assign featured_posts = site.posts | where: "featured", true %}
-                {% for item in featured_posts %}
-                    {% include featured-card.html item=item %}
-                {% endfor %}
-            </div>
-        </section>
-
-        <section class="home-content-block">
-            <h2 class="home-section-title mono">Recent Writing</h2>
-            <div id="recent-posts">
-                {% for item in site.posts limit:4 %}
-                    {% unless item.external_link %}
-                        {% include post-card.html item=item %}
-                    {% endunless %}
-                {% endfor %}
-            </div>
-            <a href="{{ '/archive' | relative_url }}" class="mono archive-link">View Archive →</a>
-        </section>
-    </main>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url=https://ayushxpatne.github.io/">
+    <link rel="canonical" href="https://ayushxpatne.github.io/" />
+    <meta name="robots" content="noindex, follow">
+    <title>Redirecting to Ayush Patne</title>
+    <script>
+        // Intelligent redirect - preserves the path structure
+        (function() {
+            var currentPath = window.location.pathname;
+            // Remove '/ayushpatne' from the path
+            var newPath = currentPath.replace('/ayushpatne', '');
+            // If path is empty or just '/', redirect to root
+            if (newPath === '' || newPath === '/') {
+                newPath = '/';
+            }
+            // Construct new URL with preserved path and any query parameters
+            var newUrl = 'https://ayushxpatne.github.io' + newPath + window.location.search + window.location.hash;
+            // Redirect
+            window.location.replace(newUrl);
+        })();
+    </script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: #f5f5f5;
+        }
+        .redirect-message {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .redirect-message h1 {
+            margin: 0 0 1rem 0;
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .redirect-message p {
+            margin: 0.5rem 0;
+            color: #666;
+        }
+        .redirect-message a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .redirect-message a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="redirect-message">
+        <h1>Page Moved</h1>
+        <p>This site has moved to <a href="https://ayushxpatne.github.io/">ayushxpatne.github.io</a></p>
+        <p>You will be redirected automatically...</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">
+            If you are not redirected, <a href="https://ayushxpatne.github.io/">click here</a>.
+        </p>
+    </div>
+</body>
+</html>
